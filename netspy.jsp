@@ -388,8 +388,6 @@
 	if (u != null) {
 
 		String post = request.getParameter("post");
-		//System.out.print(u);
-		//System.out.print(post);
 		decode = request.getParameter("decode");
 		String ref = request.getParameter("referer");
 		String cook = request.getParameter("cookie");
@@ -524,7 +522,6 @@
 			for (int j = 0; j < port.length; j++) {
 				String scantarget = useIp + i + ":" + port[j];
 				queue.offer(scantarget);
-				//System.out.println(scantarget);
 			}
 
 		}
